@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchProducts } from '../actions/productsActions';
 
 class Products extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            products: []
-        }
+    componentDidMount() {
+        this.props.fetchProducts();
     }
     
-    componentWillMount() {
-        fetch('http://localhost:3001/products')
-            .then(res => res.json())
-            .then(data => this.setState({ products: data }))
-    }
-
     render() {
-        const catalog = this.state.products.map(products => (
+        const catalog = this.props.products.map(products => (
             <div key={products.id}>
                 <h3>{products.name}</h3>
-                <img src={products.src} />
+                <img src={products.src} alt={products.name}/>
             </div>
         ));
         return (
@@ -30,4 +23,8 @@ class Products extends Component {
     }
 }
 
-export default Products;
+const mapStateToProps = state => ({
+    products: state.productsGrid.products
+});
+
+export default connect(mapStateToProps, { fetchProducts })(Products);

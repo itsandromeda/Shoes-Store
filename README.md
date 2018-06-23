@@ -16,9 +16,9 @@ yarn start
 
 ##Tools
 
--create-react-app cli
--react-bootstrap
--react-redux
+- create-react-app cli
+- react-bootstrap
+- react-redux
 
 ##Ejercicio JavaScript
 
