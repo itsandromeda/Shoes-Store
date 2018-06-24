@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {showAll, showCreepers} from '../actions/filterActions';
 import { addToCart } from '../actions/cartActions';
 
-class Products extends Component {
+class FilteredGrid extends Component {
     
     render() {  
-        const catalog = this.props.products.prods.map((products)=> (
+        const filteredCatalog = this.props.products.filtered.map((products)=> (
             <div key={products.id} className="item">
                 <div>
                     <img src={products.src} alt={products.name}/>
@@ -18,15 +19,14 @@ class Products extends Component {
         
         return (
             <div> 
-                {catalog}
+                {filteredCatalog}
             </div>
         );
     }
 }
 
 const mapStateToProps = (state) => ({
-    products: state.productsGrid,
-    cart: state.cart
+    products: state.productsGrid
 });
 
-export default connect(mapStateToProps, { addToCart })(Products);
+export default connect(mapStateToProps, {addToCart})(FilteredGrid);

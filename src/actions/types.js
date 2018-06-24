@@ -8,4 +8,6 @@ export const REMOVE = 'REMOVE';
 
 //Filter Actions
 export const SHOW_ALL = 'SHOW_ALL';
-export const SHOW_TYPE = 'SHOW_TYPE';
+export const SHOW_BOOTS = 'SHOW_BOOTS';
+export const SHOW_FLATS = 'SHOW_FLATS';
+export const SHOW_CREEPERS = 'SHOW_CREEPERS';

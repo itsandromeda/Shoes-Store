@@ -24,12 +24,6 @@ const removeFromCart = (cart, item) => {
                 { ...item, quantity: item.quantity}]
 };
 
-const initialState = {
-    items: [],
-    total: 0
-}
-//quantity * price;
-
 export default function cartReducer(state = [], action) {
     switch(action.type) {
         case ADD_ITEM:
