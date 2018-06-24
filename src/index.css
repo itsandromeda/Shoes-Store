@@ -4,6 +4,25 @@ body {
   font-family: sans-serif;
 }
 
-img {
-    height: 150px;
+.item {
+    display: inline-block;
+    width: 33.333%;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.item .title {
+    font-size: 11px;
+}
+
+.item div {
+    width: 90%;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item button {
+    float: right;
 }

@@ -1,5 +1,5 @@
 ##Quick Setup
-Clonar repositorio
+- Clonar repositorio
 
 ```bash
 #Instalar dependencias
