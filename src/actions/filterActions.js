@@ -1,5 +1,4 @@
 import { SHOW_ALL, SHOW_BOOTS, SHOW_CREEPERS, SHOW_FLATS } from './types';
-import store from '../store';
 
 export const showAll = (items) => dispatch => {
     dispatch({

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from '../actions/cartActions';
 
+import Navbar from './Navbar';
+import FilteredGrid from './FilteredGrid';
+import Filters from './Filters';
+
 class Products extends Component {
     
     render() {  
@@ -17,8 +21,10 @@ class Products extends Component {
         ));
         
         return (
-            <div> 
-                {catalog}
+            <div>
+                <Navbar />
+                <Filters />
+                {this.props.products.viewFilters ? <FilteredGrid /> : catalog}
             </div>
         );
     }

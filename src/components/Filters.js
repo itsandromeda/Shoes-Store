@@ -17,8 +17,7 @@ class Filters extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    products: state.productsGrid,
-    cart: state.cart
+    products: state.productsGrid
 });
 
 export default connect(mapStateToProps, { showCreepers, showBoots, showFlats, showAll })(Filters);

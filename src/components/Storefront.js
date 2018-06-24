@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
-import { FETCH_SUCCESS } from '../actions/types';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../actions/productsActions';
-import { addToCart} from '../actions/cartActions';
-import { showCreepers } from '../actions/filterActions';
 
 import Cart from './Cart';
-import Filters from './Filters';
-import FilteredGrid from './FilteredGrid';
 import Products from './Products';
-import Navbar from './Navbar';
 
 class Storefront extends Component {
     componentDidMount() {
@@ -20,10 +14,7 @@ class Storefront extends Component {
     render() {        
 		return (
 			<div className="shop-container">
-                <Navbar cart={this.props.cart}/>
-                <Cart products={this.props.products} />
-                <Filters />
-                {this.props.products.viewFilters ? <FilteredGrid /> : <Products />}
+                {this.props.products.viewCart ? <Cart products={this.props.products} /> : <Products />}
 			</div>
 		);
     }
@@ -31,8 +22,7 @@ class Storefront extends Component {
 
 const mapStateToProps = (state) => ({
     products: state.productsGrid,
-    cart: state.cart,
-    filteredItems: state.filter
+    cart: state.cart
 });
 
 export default connect(mapStateToProps)(Storefront);

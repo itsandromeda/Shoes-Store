@@ -11,3 +11,5 @@ export const SHOW_ALL = 'SHOW_ALL';
 export const SHOW_BOOTS = 'SHOW_BOOTS';
 export const SHOW_FLATS = 'SHOW_FLATS';
 export const SHOW_CREEPERS = 'SHOW_CREEPERS';
+export const SHOW_CART = 'SHOW_CART';
+export const HIDE_CART = 'HIDE_CART';
