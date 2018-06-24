@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ejercicio JavaScript</title>
+</head>
+
+<body>
+    <p>En este ejercicio, desarrollé una función que en caso no se haya podido acceder exitosamente al valor de una propiedad existente en un objeto, se imprime en consola el valor enviado por default. En caso sí se pueda acceder al valor de la propiedad, se ignora el valor por default, la variable toma el valor de esta propiedad y se imprime su nuevo valor en consola.</p>
+    <script>
+        let object = { 'a': [ { 'b': { 'c': 3 } }] };
+        let object2 = { a: { b: { c: 3 } } };
+
+        const getIn = (obj,path,defaultValue) => {
+            let array = path.split(".");
+
+            for (let i = 0; i < array.length; i++) {
+                if (obj.hasOwnProperty(array[i])) {            
+                    obj = obj[array[i]];
+                } else {
+                    return defaultValue;
+                }
+            }
+            return obj;
+        };
+
+        console.log(getIn(object, 'a.b.c', 'default'));
+        console.log(getIn(object2, 'a.b.c', 5));
+        console.log(getIn(object2, 'a.b.d', 5));
+    </script>
+</body>
+
+</html>
