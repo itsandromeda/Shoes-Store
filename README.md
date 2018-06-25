@@ -1,8 +1,7 @@
 ## Demo
-### Filters
-<img src="https://github.com/itsandromeda/Shoes-Store/blob/master/src/img/filters.gif" height="400" />
+<img src="https://github.com/itsandromeda/Shoes-Store/blob/master/src/img/demo.gif" height="350" />
 
-##Quick Setup
+## Quick Setup
 - Clonar repositorio
 
 ```bash
@@ -18,7 +17,7 @@ json-server --watch db.json --port 3001
 yarn start
 ```
 
-##Tools
+## Tools
 
 - create-react-app cli
 - react-bootstrap
