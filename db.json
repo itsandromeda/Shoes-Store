@@ -162,10 +162,10 @@
         "price": 100
     }, {
         "id": 23,
-        "name": "Detention Platform Creepers",
+        "name": "Paint Splash Casbah Creepers",
         "type": "CREEPERS",
         "brand": "T.U.K.",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/23.jpg",
-        "price": 110
+        "price": 100
     }]
 }
