@@ -1,5 +1,7 @@
 ## Demo
-<img src="https://github.com/itsandromeda/Shoes-Store/blob/master/src/img/demo.gif" height="350" />
+<img src="https://github.com/itsandromeda/Shoes-Store/blob/master/src/img/demo.gif" height="300" />
+<img src="https://github.com/itsandromeda/Shoes-Store/blob/master/src/img/demo_mobile.gif" height="500" />
+
 
 ## Quick Setup
 - Clonar repositorio
