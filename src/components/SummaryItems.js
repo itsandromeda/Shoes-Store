@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addToCart, removeFromCart, remove, hideCart } from '../actions/cartActions';
+import { addToCart, removeFromCart, remove, hideCart, emptyCart } from '../actions/cartActions';
 import '../index.css';
 
 class SummaryItems extends Component {
@@ -12,7 +12,7 @@ class SummaryItems extends Component {
         }
 
         const listedItems = sort(this.props.cart).map(item => (
-            <div className="listed-item">
+            <div key={item.id} className="listed-item">
                 <div>
                     <img src={item.src} alt={item.name} />
                 </div>
@@ -24,7 +24,7 @@ class SummaryItems extends Component {
                         <span> {item.quantity} </span>
                         <button className="amount-btn" onClick={() => this.props.addToCart(item)}> + </button>
                     </div>
-                    <p><i>${item.price * item.quantity}</i></p>
+                    <p><i>${(item.price * item.quantity).toFixed(2)}</i></p>
                     <span className="del" onClick={() => this.props.remove(item)}>Delete from cart</span>
                 </div>
             </div>
@@ -35,8 +35,9 @@ class SummaryItems extends Component {
                 {listedItems}
                 <hr />
                 <div className="checkout-bot">
-                    <span><strong>Total: ${ total }</strong></span>
+                    <span><strong>Total: ${ total.toFixed(2) }</strong></span>
                 </div>
+                <button className="buy-btn" onClick={() => this.props.emptyCart(this.props.cart)}>BUY ITEMS</button>
             </div>
         );   
     }
@@ -46,4 +47,4 @@ const mapStateToProps = state => ({
     cart: state.cart
 });
 
-export default connect(mapStateToProps, { addToCart, removeFromCart, remove, hideCart })(SummaryItems);
+export default connect(mapStateToProps, { addToCart, removeFromCart, remove, hideCart, emptyCart })(SummaryItems);

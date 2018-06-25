@@ -1,4 +1,4 @@
-import { ADD_ITEM, REMOVE_ITEM, REMOVE, SHOW_CART, HIDE_CART } from './types';
+import { ADD_ITEM, REMOVE_ITEM, REMOVE, SHOW_CART, HIDE_CART, EMPTY_CART } from './types';
 
 export const addToCart = (item) => dispatch => {
     dispatch({
@@ -17,6 +17,13 @@ export const removeFromCart = (item) => dispatch => {
 export const remove = (item) => dispatch => {
     dispatch({
         type: REMOVE,
+        payload: item
+    });
+};
+
+export const emptyCart = (item) => dispatch => {
+    dispatch({
+        type: EMPTY_CART,
         payload: item
     });
 };

@@ -50,11 +50,11 @@
         "price": 150
     }, {
         "id": 7,
-        "name": "Wild Zebra Creepers",
-        "type": "CREEPERS",
-        "brand": "DEMONIA",
+        "name": "Mermaids Are Real Hologram Boots",
+        "type": "BOOTS & BOOTIES",
+        "brand": "UNBRANDED",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/7.jpg",
-        "price": 35
+        "price": 60
     }, {
         "id": 8,
         "name": "Detention Platform Creepers",
@@ -104,5 +104,68 @@
         "brand": "CURRENT MOOD",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/14.jpg",
         "price": 88
+    }, {
+        "id": 15,
+        "name": "Toxic Slime Combat Boots",
+        "type": "BOOTS & BOOTIES",
+        "brand": "CURRENT MOOD",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/15.jpg",
+        "price": 88
+    }, {
+        "id": 16,
+        "name": "Mojave Stacks On Stacks Boots",
+        "type": "BOOTS & BOOTIES",
+        "brand": "CURRENT MOOD",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/16.jpg",
+        "price": 58
+    }, {
+        "id": 17,
+        "name": "Burgundy Stomp Hi Patent Boots",
+        "type": "BOOTS & BOOTIES",
+        "brand": "STRANGE CVLT",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/17.jpg",
+        "price": 120
+    }, {
+        "id": 18,
+        "name": "Moon Child Flats",
+        "type": "FLATS",
+        "brand": "KILLSTAR",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/18.jpg",
+        "price": 60
+    }, {
+        "id": 19,
+        "name": "Change Of Pace Rhinestone Mules",
+        "type": "FLATS",
+        "brand": "UNBRANDED",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/19.jpg",
+        "price": 28
+    }, {
+        "id": 20,
+        "name": "Let's Go Slides",
+        "type": "FLATS",
+        "brand": "UNBRANDED",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/20.jpg",
+        "price": 25
+    }, {
+        "id": 21,
+        "name": "Picnic Viva Mondo Creepers",
+        "type": "CREEPERS",
+        "brand": "T.U.K.",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/21.jpg",
+        "price": 85
+    }, {
+        "id": 22,
+        "name": "Cyberspace Holo Creepers",
+        "type": "CREEPERS",
+        "brand": "T.U.K.",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/22.jpg",
+        "price": 100
+    }, {
+        "id": 23,
+        "name": "Detention Platform Creepers",
+        "type": "CREEPERS",
+        "brand": "T.U.K.",
+        "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/23.jpg",
+        "price": 110
     }]
 }

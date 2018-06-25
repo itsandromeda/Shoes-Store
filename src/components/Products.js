@@ -16,7 +16,7 @@ class Products extends Component {
                     <img src={products.src} alt={products.name}/>
                     <h3 className="title">{products.name}</h3>
                     <div className="prod-desc">
-                        <span>$ {products.price}</span>
+                        <span>$ {products.price.toFixed(2)}</span>
                         <button className="add-btn" onClick={() => this.props.addToCart(products)} data-id={products.id}>ADD TO BAG</button>
                     </div>
                 </div>

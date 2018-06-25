@@ -1,4 +1,4 @@
-import { ADD_ITEM, REMOVE_ITEM, REMOVE } from '../actions/types';
+import { ADD_ITEM, REMOVE_ITEM, REMOVE, EMPTY_CART } from '../actions/types';
 
 const cartWithoutItem = (cart, item) => cart.filter(cartItem => cartItem.id !== item.id);
 const itemInCart = (cart, item) => cart.filter(cartItem => cartItem.id === item.id)[0];
@@ -36,6 +36,9 @@ export default function cartReducer(state = [], action) {
             const firstMatchIndex = state.indexOf(action.payload);
             return state.filter((item, index) => index !== firstMatchIndex);
         break;
+        case EMPTY_CART:
+            return [];
+            break;
         default:
             return state;
     }

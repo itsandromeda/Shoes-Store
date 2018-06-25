@@ -279,6 +279,20 @@ body {
     width: 45%;
 }
 
+.buy-btn {
+    font-family: 'Anton', sans-serif;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ee008a;
+    border: 0;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+}
+
 .footer {
     box-sizing: border-box;
     background: #000;
