@@ -4,6 +4,61 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.header img {
+    width: 100%;
+}
+
+.nav {
+    box-sizing: border-box;
+    background-color: #000;
+    height: 100px;
+    padding: 15px 20px;
+}
+
+.nav > div {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+.cart-btn {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    width: 30px;
+    float: right;
+}
+.cart-btn img {
+    width: 28px;
+}
+
+.cart-btn div {
+    text-align: center;
+    position: absolute;
+    top: 12px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 29px;
+    margin: auto;
+}
+
 .item {
     display: inline-block;
     width: 33.333%;
@@ -12,11 +67,14 @@ body {
 }
 
 .item .title {
-    font-size: 11px;
+    font-family: 'Actor', sans-serif;
+    font-size: 14px;
 }
 
-.item div {
-    width: 90%;
+.item > div {
+    width: 80%;
+    margin: auto;
+    font-size: 13px;
 }
 
 .item img {
@@ -25,4 +83,213 @@ body {
 
 .item button {
     float: right;
+}
+
+.filter-container {
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    top: -30px;
+    padding: 30px 0 10px 0;
+}
+
+.filter-container > div {
+    width: 80%;
+    margin: auto;
+}
+
+.filter-container button {
+    font-family: 'Anton', sans-serif;
+    background: #eee;
+    width: 70px;
+    height: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 8px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.filter-container button:first-child {
+    margin: 0;
+}
+
+.filter-container button:hover {
+    background-color: #ee008a;
+    color: #fff;
+}
+
+.add-btn { 
+    background-color: #ee008a;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #c50072;
+}
+
+.cart-wrapper {
+    background-color: #eee;
+    height: auto;
+}
+
+.cart-wrapper > div {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+
+.checkout-container {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 46%;
+    padding: 20px;
+    min-height: 300px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 120px;
+}
+
+.checkout-container h3 {
+    margin-top: 0;
+}
+
+.checkout-container:first-child {
+    margin-right: 20px;
+}
+
+.listed-item > div {
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.listed-item > div:first-child {
+    width: 30%;
+}
+.listed-item img {
+    width: 100%;
+    max-width: 140px;
+}
+
+.listed-item > div:last-child {
+    width: 70%;
+    padding-left: 10px;
+}
+
+.del {
+    text-decoration: underline;
+    color: #ee008a;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.del:hover {
+    color: #c50072;
+}
+
+.listed-item h4 {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.item-dtls {
+    font-size: 13px;
+}
+
+.amount-btn {
+    background-color: #fff;
+    text-align: center;
+    color: #ee008a;
+    border: 1px solid #ee008a;
+    font-weight: bold;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.amount-btn:hover {
+    background-color: #ee008a;
+    color: #fff;
+}
+
+.checkout-bot {
+    text-align: right;
+    font-size: 20px;
+}
+
+.back-btn {
+    background-color: transparent;
+    text-decoration: underline;
+    border: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.checkout-container:first-child h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+}
+
+.action-btns {
+    text-align: center;
+}
+
+.account-btn {
+    font-family: 'Anton', sans-serif;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #ee008a;
+    width: 80%;
+    margin-bottom: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.fb-btn {
+    font-family: 'Anton', sans-serif;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #4665ac;
+    width: 80%;
+    margin-bottom: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.emptyCartIcon {
+    text-align: center;
+}
+
+.emptyCartIcon img {
+    width: 45%;
+}
+
+.footer {
+    box-sizing: border-box;
+    background: #000;
+    height: 44px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer a:active,
+.footer a:focus,
+.footer a:visited {
+    color: #fff;
 }

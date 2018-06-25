@@ -1,105 +1,105 @@
 {
     "products": [{
         "id": 0,
-        "name": "FENTY PUMA BY RIHANNA DRIZZLE BAY ESPADRILLES",
+        "name": "Fenty Puma By Rihanna Drizzle Bay Espadrilles",
         "type": "FLATS",
         "brand": "PUMA",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/0.jpg",
         "price": 100
     }, {
         "id": 1,
-        "name": "SLIDE THRU QUILTED SLIDES",
+        "name": "Slide Thru Quilted Slides",
         "type": "FLATS",
         "brand": "HUF",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/1.jpg",
         "price": 18
     }, {
         "id": 2,
-        "name": "DON'T TRIP GINGHAM FLATS",
+        "name": "Don't Trip Gingham Flats",
         "type": "FLATS",
         "brand": "HUF",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/2.jpg",
         "price": 25
     }, {
         "id": 3,
-        "name": "LEVEL UP PLATFORM SLIDES",
+        "name": "Level Up Platform Slides",
         "type": "FLATS",
         "brand": "HUF",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/3.jpg",
         "price": 30
     }, {
         "id": 4,
-        "name": "PLATFORM SLIDE EP SANDALS",
+        "name": "Platform Slide EP Sandals",
         "type": "FLATS",
         "brand": "PUMA",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/4.jpg",
         "price": 50
     }, {
         "id": 5,
-        "name": "STRIPE VIVA MONDO CREEPERS",
+        "name": "Stripe Viva Mondo Creepers",
         "type": "CREEPERS",
         "brand": "T.U.K.",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/5.jpg",
         "price": 100
     }, {
         "id": 6,
-        "name": "BLACK HOLOGRAM PATENT 3-BUCKLE POINTED CREEPERS",
+        "name": "Black Hologram Parent 3-Buckle Pointed Creepers",
         "type": "CREEPERS",
         "brand": "T.U.K.",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/6.jpg",
         "price": 150
     }, {
         "id": 7,
-        "name": "WILD ZEBRA CREEPERS",
+        "name": "Wild Zebra Creepers",
         "type": "CREEPERS",
         "brand": "DEMONIA",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/7.jpg",
         "price": 35
     }, {
         "id": 8,
-        "name": "DETENTION PLATFORM CREEPERS",
+        "name": "Detention Platform Creepers",
         "type": "CREEPERS",
         "brand": "T.U.K.",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/8.jpg",
         "price": 110
     }, {
         "id": 9,
-        "name": "GAG ME CAGED BOOTS",
+        "name": "Gag Me Caged Boots",
         "type": "BOOTS & BOOTIES",
         "brand": "DEMONIA",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/9.jpg",
         "price": 90
     }, {
         "id": 10,
-        "name": "PEDAL TO THE METAL LEATHER BOOTS",
+        "name": "Pedal To The Metal Leather Boots",
         "type": "BOOTS & BOOTIES",
         "brand": "NEW ROCK",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/10.jpg",
         "price": 235
     }, {
         "id": 11,
-        "name": "SWITCHBLADE SIS LEATHER PLATFORMS",
+        "name": "Switchblade Sis Leather Platforms",
         "type": "BOOTS & BOOTIES",
         "brand": "NEW ROCK",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/11.jpg",
         "price": 245
     }, {
         "id": 12,
-        "name": "KEEP YA SPARKLE GLITTER BOOTS",
+        "name": "Keep Ya Sparkle Glitter Boots",
         "type": "BOOTS & BOOTIES",
         "brand": "CURRENT MOOD",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/12.jpg",
         "price": 88
     }, {
         "id": 13,
-        "name": "BONE CRUSHER SKULL VEGAN BOOTIES",
+        "name": "Bone Crusher Skull Vegan Booties",
         "type": "BOOTS & BOOTIES",
         "brand": "DEMONIA",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/13.jpg",
         "price": 68
     }, {
         "id": 14,
-        "name": "NEW COVEN PLATFORM BOOTS",
+        "name": "New Coven Platform Boots",
         "type": "BOOTS & BOOTIES",
         "brand": "CURRENT MOOD",
         "src": "https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/14.jpg",

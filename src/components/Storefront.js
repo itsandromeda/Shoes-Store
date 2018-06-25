@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../actions/productsActions';
+import '../index.css';
 
 import Cart from './Cart';
 import Products from './Products';
+import Footer from './Footer';
 
 class Storefront extends Component {
     componentDidMount() {
@@ -13,8 +15,9 @@ class Storefront extends Component {
     
     render() {        
 		return (
-			<div className="shop-container">
+			<div className="container">
                 {this.props.products.viewCart ? <Cart products={this.props.products} /> : <Products />}
+                <Footer />
 			</div>
 		);
     }

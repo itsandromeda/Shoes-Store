@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from '../actions/cartActions';
+import '../index.css';
 
 import Navbar from './Navbar';
 import FilteredGrid from './FilteredGrid';
@@ -14,8 +15,10 @@ class Products extends Component {
                 <div>
                     <img src={products.src} alt={products.name}/>
                     <h3 className="title">{products.name}</h3>
-                    <span>$ {products.price}</span>
-                    <button className="btn btn-outline-primary" onClick={() => this.props.addToCart(products)} data-id={products.id}>Add to cart</button>
+                    <div className="prod-desc">
+                        <span>$ {products.price}</span>
+                        <button className="add-btn" onClick={() => this.props.addToCart(products)} data-id={products.id}>ADD TO BAG</button>
+                    </div>
                 </div>
             </div>
         ));
@@ -24,7 +27,9 @@ class Products extends Component {
             <div>
                 <Navbar />
                 <Filters />
+                <div className="wrapper">
                 {this.props.products.viewFilters ? <FilteredGrid /> : catalog}
+                </div>
             </div>
         );
     }

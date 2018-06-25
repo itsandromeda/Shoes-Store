@@ -2,50 +2,40 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToCart, removeFromCart, remove, hideCart } from '../actions/cartActions';
 
+import SummaryItems from './SummaryItems';
+import EmptyCart from './EmptyCart';
+
+import '../index.css';
+
 class Cart extends Component {
     render() {
-        const total = this.props.cart.reduce((accumulator, item) => accumulator + (item.price * item.quantity) ,0);
-    
-        function sort(items) {
-            return items.sort((a, b) => a.id < b.id)
-        }
-
-        const listedItems = sort(this.props.cart).map(item => (
-            <tr key={item.id}>
-                <td>{item.name}</td>
-                <td><button onClick={() => this.props.removeFromCart(item)}> - </button> {item.quantity} <button onClick={() => this.props.addToCart(item)}> + </button></td>
-                <td><span onClick={() => this.props.remove(item)}>Delete from cart</span></td>
-                <td>${item.price * item.quantity}</td>
-            </tr>
-        ));
 
         return (
-                <div className="cart-product">
-                <button onClick={() => this.props.hideCart(this.props.cart)}>Seguir comprando</button>
-                <hr/>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Quantity</th>
-                            <th></th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        { listedItems }
-                    </tbody>
-                        <tfoot>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Total: ${total}</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <hr/>
+                <div className="cart-wrapper">
+                    <nav className="nav">
+                        <div>
+                            <div className="logo">
+                                <img onClick={() => this.props.hideCart(this.props.cart)} src="https://raw.githubusercontent.com/itsandromeda/Shoes-Store/master/src/img/store_logo.png" alt="Dollskill logo" />
+                            </div>
+                        </div>
+                    </nav>
+                    <div>
+                        <button className="back-btn" onClick={() => this.props.hideCart(this.props.cart)}> ← Keep shopping</button>
+                        <div>
+                            <div className="checkout-container">
+                                <h3>ACCOUNT</h3>
+                                <div className="action-btns">
+                                    <button className="account-btn">CREATE AN ACCOUNT</button>
+                                    <button className="fb-btn">LOGIN WITH FACEBOOK</button>
+                                </div>
+                            </div>
+                            <div className="checkout-container">
+                                { this.props.cart.length === 0 ? <EmptyCart /> : <SummaryItems />}
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                    
         );   
     }
 }
